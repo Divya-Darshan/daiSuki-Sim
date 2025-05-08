@@ -83,15 +83,25 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
-func rotate_look(rot_input : Vector2):
+func rotate_look(rot_input: Vector2):
 	var multiplier := 0.01 if is_touch_device else look_speed
 	look_rotation.x -= rot_input.y * multiplier
 	look_rotation.x = clamp(look_rotation.x, deg_to_rad(-85), deg_to_rad(85))
 	look_rotation.y -= rot_input.x * multiplier
+
+	var current_rotation_y = rotation.y
+	var current_head_rotation_x = head.rotation.x
+
+	# Smoothly interpolate to target rotations
+	var new_rotation_y = lerp_angle(current_rotation_y, look_rotation.y, 0.15)
+	var new_head_rotation_x = lerp_angle(current_head_rotation_x, look_rotation.x, 0.15)
+
+	# Apply new rotations
 	transform.basis = Basis()
-	rotate_y(look_rotation.y)
+	rotate_y(new_rotation_y)
 	head.transform.basis = Basis()
-	head.rotate_x(look_rotation.x)
+	head.rotate_x(new_head_rotation_x)
+
 
 
 func enable_freefly():
