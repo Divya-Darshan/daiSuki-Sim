@@ -28,9 +28,9 @@ Designed from the ground up to be played on **Android** and **iOS** devices:
 You play as a character exploring a vibrant world where love slowly blossoms. Meet, talk, connect — and discover what it means to truly care for someone.
 
 - 💌 **Genre:** Mobile Romantic Life Simulation  
-- 🎮 **Engine:** Godot 4.x  
+- 🎮 **Engine:** Godot 4.3    
 - 🎨 **Style:** Anime/Visual Novel meets 3D Exploration  
-- 🌍 **Platform:** Android, iOS (WebGL & PC support later)
+- 🌍 **Platform:** Android (WebGL & PC support later)  
 
 ---
 
