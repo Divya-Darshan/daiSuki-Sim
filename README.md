@@ -1,4 +1,4 @@
-# 🌸 daiSuki-Sim 💖
+<!--# 🌸 daiSuki-Sim 💖
 *A Romantic Life Simulator — Designed for Mobile*
 
 ![LoveSimulator](https://img.shields.io/badge/genre-love--simulator-pink?style=flat-square) ![Godot](https://img.shields.io/badge/engine-godot_4-blue?logo=godot-engine&style=flat-square) ![Platform](https://img.shields.io/badge/platform-mobile--first-green?style=flat-square) ![Status](https://img.shields.io/badge/status-in--development-yellow?style=flat-square)
@@ -72,3 +72,4 @@ You play as a character exploring a vibrant world where love slowly blossoms. Me
 ---
 
 ### 🌟 Follow for devlogs and early access!
+-->
